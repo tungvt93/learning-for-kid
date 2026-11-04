@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: be-vui-hoc
+    runtime: python
+    plan: free
+    buildCommand: "true"
+    startCommand: "./run.sh"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
